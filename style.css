@@ -129,3 +129,9 @@ p {
   from { transform: translateY(100vh); }
   to { transform: translateY(-10vh); }
 }
+.emoji {
+  color: white;
+  text-shadow: none;
+  background: none;
+  font-size: 1.2em;
+}

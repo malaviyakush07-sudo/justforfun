@@ -6,7 +6,6 @@ body {
   overflow: hidden;
 }
 
-/* animated glow background */
 body::before {
   content: "";
   position: fixed;
@@ -22,7 +21,6 @@ body::before {
   100% { transform: translate(20%, 20%); }
 }
 
-/* VFX canvas */
 canvas {
   position: fixed;
   top: 0;
@@ -30,63 +28,43 @@ canvas {
   z-index: -1;
 }
 
-/* center layout */
 .container {
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  animation: fade 1s ease;
 }
 
-/* text */
 h1 {
-  font-size: 42px;
-  text-align: center;
+  font-size: 38px;
   text-shadow: 0 0 20px #ff2e63;
 }
 
 p {
   color: #bbb;
-  margin-top: 10px;
 }
 
-/* image */
 img {
-  width: 240px;
+  width: 220px;
   border-radius: 20px;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
   box-shadow: 0 0 30px rgba(255,0,100,0.4);
-  animation: float 3s ease-in-out infinite;
 }
 
-@keyframes float {
-  0%,100% {transform: translateY(0);}
-  50% {transform: translateY(-10px);}
-}
-
-/* buttons */
 .btn a, .btn button {
   text-decoration: none;
-  padding: 12px 30px;
+  padding: 12px 28px;
   margin: 10px;
   border-radius: 30px;
-  border: none;
   background: rgba(255,255,255,0.08);
   color: white;
-  backdrop-filter: blur(10px);
-  cursor: pointer;
   transition: 0.3s;
+  border: none;
+  cursor: pointer;
 }
 
 .btn a:hover, .btn button:hover {
   background: linear-gradient(45deg, #ff2e63, #ff6b81);
   transform: scale(1.1);
-  box-shadow: 0 0 20px #ff2e63;
-}
-
-@keyframes fade {
-  from {opacity:0; transform: translateY(20px);}
-  to {opacity:1;}
 }

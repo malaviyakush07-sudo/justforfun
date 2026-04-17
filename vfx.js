@@ -10,13 +10,13 @@ function resize(){
 resize();
 window.addEventListener("resize", resize);
 
-let hearts = [];
+let particles = [];
 
-for(let i=0;i<50;i++){
-  hearts.push({
+for(let i=0;i<40;i++){
+  particles.push({
     x: Math.random()*canvas.width,
     y: Math.random()*canvas.height,
-    size: Math.random()*2 + 1,
+    size: Math.random()*2,
     speed: Math.random()*0.5 + 0.2
   });
 }
@@ -24,13 +24,13 @@ for(let i=0;i<50;i++){
 function draw(){
   ctx.clearRect(0,0,canvas.width,canvas.height);
 
-  hearts.forEach(h=>{
-    h.y -= h.speed;
-    if(h.y < 0) h.y = canvas.height;
+  particles.forEach(p=>{
+    p.y -= p.speed;
+    if(p.y < 0) p.y = canvas.height;
 
-    ctx.fillStyle = "rgba(255,0,100,0.6)";
     ctx.beginPath();
-    ctx.arc(h.x, h.y, h.size, 0, Math.PI*2);
+    ctx.arc(p.x, p.y, p.size, 0, Math.PI*2);
+    ctx.fillStyle = "rgba(255,0,100,0.6)";
     ctx.fill();
   });
 

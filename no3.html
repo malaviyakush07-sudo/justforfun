@@ -2,78 +2,33 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Last Chance 😭</title>
 
-<!-- Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-70SHQBPSCS"></script>
 <script>
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
+window.dataLayer=[];function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
-gtag('config', 'G-70SHQBPSCS');
-
+gtag('config','G-70SHQBPSCS');
 gtag('event','reached_no3');
 </script>
 
-<style>
-body {
-  margin: 0;
-  background: #c69c9c;
-  text-align: center;
-  font-family: Arial;
-  overflow: hidden;
-}
-
-.container {
-  margin-top: 50px;
-}
-
-.btn a, .btn button {
-  padding: 12px 25px;
-  margin: 10px;
-  border-radius: 25px;
-  border: none;
-  background: white;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-#noBtn {
-  position: absolute;
-}
-</style>
+<link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
 
 </head>
 
 <body>
-
 <div class="container">
 
-<!-- GIF -->
-<div class="tenor-gif-embed" data-postid="22885016" data-width="200"></div>
-<script async src="https://tenor.com/embed.js"></script>
+<img src="https://media.tenor.com/fY9bQzJ8w0QAAAAi/crying-cat.gif">
 
-<h1>pls Mani ja ne! 😭</h1>
-<p>bov khotu ho aa 😭</p>
+<h1>Last chance 😭</h1>
+<p>Now NO not allowed 😈</p>
 
 <div class="btn">
-  <a href="yes.html">Yes 💖</a>
-  <button id="noBtn">No 😈</button>
+<a href="yes.html">Yes 💖</a>
+<button id="noBtn" onmouseover="moveNoButton()">No 😈</button>
 </div>
 
 </div>
-
-<script>
-const noBtn = document.getElementById("noBtn");
-
-noBtn.addEventListener("mouseover", function () {
-  const x = Math.random() * (window.innerWidth - 100);
-  const y = Math.random() * (window.innerHeight - 50);
-
-  noBtn.style.left = x + "px";
-  noBtn.style.top = y + "px";
-});
-</script>
-
 </body>
 </html>

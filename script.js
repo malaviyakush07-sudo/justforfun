@@ -1,12 +1,12 @@
-const btn = document.getElementById("noBtn");
+const noBtn = document.getElementById("noBtn");
 
-if (btn) {
-  btn.addEventListener("mouseover", () => {
-    const x = Math.random()*(window.innerWidth-120);
-    const y = Math.random()*(window.innerHeight-80);
+if (noBtn) {
+  noBtn.addEventListener("mouseover", () => {
+    const x = Math.random() * window.innerWidth - 100;
+    const y = Math.random() * window.innerHeight - 50;
 
-    btn.style.position="absolute";
-    btn.style.left=x+"px";
-    btn.style.top=y+"px";
+    noBtn.style.position = "absolute";
+    noBtn.style.left = x + "px";
+    noBtn.style.top = y + "px";
   });
 }
